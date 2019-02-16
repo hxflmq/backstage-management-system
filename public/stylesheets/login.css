@@ -1,0 +1,24 @@
+#btn1{
+    display: inline-block;
+    width: 65px;
+    height: 40px;
+    margin: 27px 0;
+}
+#btn2{
+    display: inline-block;
+    height: 40px;
+    margin: 27px 40px;
+}
+.log{
+    top: 248px;
+    left: 171px;
+}
+#tiao{
+    color: red;
+    display: block;
+    width: 134px;
+    margin: 32px 409px;
+}
+#tiao:hover{
+    color: rgb(219, 129, 11);
+}

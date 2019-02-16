@@ -1,0 +1,143 @@
+.admin,.log,.puto,.vip,.curd,.skin{
+   display: none;
+}
+.puto{
+    height: 459px;
+    overflow: hidden;
+}
+#page-wrapper{
+    background: url('/images/meinv.gif') no-repeat;
+    background-size: cover;
+}
+.btn{
+    width: 300px;
+    text-align: center;
+    margin: 123px;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+    color: rgb(255, 166, 0);
+    font-size: 24px;
+}
+#aid{
+    height: 369px;
+    overflow: hidden;
+}
+#putong{
+    height: 369px;
+    overflow: hidden;
+}
+.conh{
+    width: 812px;
+    height: 51px;
+    text-align: center;
+    background-color: rgb(197, 184, 218);
+    position: absolute;
+    left: 352px;
+    z-index: 9999;
+    top: -51px;
+    opacity: 0;
+    box-shadow: 0px 4px 28px rgb(103, 67, 119);
+    text-shadow: 0px 0px 5px darkred;
+}
+#page{
+    position: fixed;
+    bottom: 155px;
+    left: 1247px;
+    z-index: 1000;
+    width: 643px;
+    height: 61px;
+    background: white;
+}
+#page li{
+    float: left;
+    list-style: none;
+    background: antiquewhite;
+    margin-top: 7px;
+}
+#pucha{
+    position: fixed;
+    bottom: 155px;
+    left: 1247px;
+    z-index: 1000;
+    width: 643px;
+    height: 61px;
+    background: white;
+}
+#pucha li{
+    list-style: none;
+    text-align: center;
+    color: rgb(223, 121, 4);
+    float: left;
+    line-height: 50px;
+    background: antiquewhite;
+    margin: 10px 17px;
+    font-size: 23px;
+}
+.put{
+    margin-top: 12px;
+    color: brown;
+}
+.sidebar{
+    height: 917px;
+}
+#putong li{
+    list-style: none;
+    text-align: center;
+    color: rgb(223, 121, 4);
+    float: left;
+    line-height: 50px;
+    background: antiquewhite;
+    margin: 10px 17px;
+    font-size: 40px;
+}
+.curd li{
+    list-style: none;
+    text-align: center;
+    color: rgb(223, 121, 4);
+    float: left;
+    line-height: 50px;
+    background: antiquewhite;
+    margin: 10px 17px;
+    font-size: 23px;
+}
+.curd{
+    position: relative;
+    height: 372px;
+}
+.curd input[type='button']{
+    margin-left: 30px;
+}
+.curd h1,h2,h3{
+    display: inline-block;
+     font-size: 28px;
+     color: blueviolet;
+     margin-right: 120px;
+ }
+.vip li{
+    list-style: none;
+    text-align: center;
+    color: rgb(223, 121, 4);
+    float: left;
+    line-height: 50px;
+    background: antiquewhite;
+    margin: 10px 17px;
+    font-size: 40px;
+}
+.skin h1,h2,h3{
+   display: block;
+    font-size: 28px;
+    color: blueviolet;
+    margin-right: 120px;
+}
+#putong h1,h2,h3{
+   display: inline-block;
+    font-size: 28px;
+    color: blueviolet;
+    margin-right: 120px;
+}
+.vip h1,h2,h3{
+   display: inline-block;
+    font-size: 28px;
+    color: blueviolet;
+    margin-right: 120px;
+}

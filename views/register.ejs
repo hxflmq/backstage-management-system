@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/register.css">
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <form class="form-horizontal cont">
+        <h1>注册信息</h1>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">账号</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="text" placeholder="账号">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="pass" placeholder="密码">
+          </div>
+        </div>
+         <div class="sec">
+             <label for="sex">性别</label>
+             <input type="radio" name="" id="man">男
+             <input type="radio" name="" id="woman">女
+         </div>
+         <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">关联邮箱</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="email" placeholder="邮箱">
+                </div>
+              </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="button" class="btn btn-primary btn-lg btn-success" data-toggle="modal" data-target="#myModal">
+                   完成注册
+                  </button>
+            <a href="login" id="tiao">已有账号?前去登录试试</a>
+          </div>
+        </div>
+        <div class="alreay"></div>
+      </form>
+      <script>
+         $(function(){
+             $(".btn").on("click",function(e){
+        //取值及阻止submit默认行为
+                e.preventDefault();
+                 $text = $("#text").val();
+                 $pass = $("#pass").val();
+                 $email = $("#email").val();
+                 if($text.length>6){               
+                     //ajax请求数据
+                     $.post("/users/register",{username:$text,password:$pass,email:$email}).done((data)=>{
+                          if(data==0){
+                            $(".alreay").html("该用户已注册!");
+                             function delay (){
+                                 location.href="/register";
+                             }
+                             setTimeout(delay,3000)
+                          }else{
+                              location.href="/login";
+                          }
+                            })
+                 }
+        })
+         })
+      
+      </script>
+</body>
+</html>
